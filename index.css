@@ -27,7 +27,7 @@ section {
     padding: 6em 1em;
     margin: 1em 0;
 }
-section.intro, section.about{
+section.intro, section.about, section.projects{
     background-color: rgba(0, 0, 0, 0.849);
     color: white;
     margin-bottom: 0;
@@ -36,15 +36,34 @@ section.intro, section.about{
     letter-spacing: 2px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-section.intro::first-line, section.about::first-line{
+section.intro::first-line, section.about::first-line, section.projects::first-line, .card::first-line{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: x-large;
     font-weight: bolder;
+    text-transform: capitalize;
 }
 section.about{
     text-align: justify;
+    background-color: white;
+    color: black;
+    margin-top: 0px;
+}
+section.projects{
     background-color: rgba(119, 29, 204, 0.801);
     color: white;
-    margin-top: 0px;
+}
+.projects > .card{
+    display: inline-block;
+    width: 18vw;
+    margin: 1em;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.89);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.664);
+    color: blueviolet;
+}
+.card > button{
+    border-radius: 16px;
+    padding:  0.6em 2em;
+    border: 2px solid blueviolet;
 }
